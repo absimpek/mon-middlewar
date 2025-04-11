@@ -44,6 +44,7 @@ app.get("/scrape", async (req, res) => {
   }
 });
 
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`SmartProxy middleware running on port ${PORT}`);
 });
